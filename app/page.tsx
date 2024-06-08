@@ -10,7 +10,9 @@ export default function Home() {
           <Logo />
         </div>
         <div className="flex-col flex">
-          <h1 className="text-[4.3vw] font-semibold">Industrial Web Company</h1>
+          <h1 className="text-[4.3vw] font-semibold big-shadow">
+            Industrial Web Company
+          </h1>
         </div>
       </div>
       <div className="flex flex-row gap-5">

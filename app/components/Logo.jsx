@@ -5,6 +5,8 @@ const SvgComponent = (props) => (
     width={195}
     height={209}
     fill="none"
+    viewBox="0 0 195 209"
+    className="max-w-full"
     {...props}
   >
     <path
