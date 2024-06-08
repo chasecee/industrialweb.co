@@ -24,7 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-  @apply bg-slate-950  text-white;
+  @apply bg-[#363636]  text-white;
 }
 
 @layer utilities {
