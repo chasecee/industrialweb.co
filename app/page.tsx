@@ -3,14 +3,27 @@ import Logo from "./components/Logo";
 
 export default function Home() {
   const currentYear = new Date().getFullYear();
+
+  let shadow = "";
+  for (let i = 0; i < 16; i++) {
+    shadow += `${(shadow ? "," : "") + -i * 0.05}vw ${i * 0.05}vw 0 #000`;
+  }
+
+  const shadowStyle = {
+    textShadow: shadow,
+  };
+
   return (
-    <main className="flex min-h-[100dvh] flex-col items-start justify-between p-6 md:p-20">
+    <main className="flex min-h-[100dvh] flex-col items-start justify-between p-6 md:p-20 tracking-[-0.05em]">
       <div className="content flex flex-row gap-[3vw] items-center">
         <div className="w-[50px] md:min-w-[120px] md:w-[10vw] ">
           <Logo />
         </div>
         <div className="flex-col flex">
-          <h1 className="text-[4.3vw] font-semibold big-shadow">
+          <h1
+            className="text-[clamp(16px,4.3vw,65px)] font-semibold leading-[100%]"
+            style={shadowStyle}
+          >
             Industrial Web Company
           </h1>
         </div>
