@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Industrial Web Company",
   description: "Building the web.",
   icons: {
-    icon: "/icons/favicon.ico",
+    // icon: "/icons/favicon.ico",
     shortcut: "/icons/favicon-32x32.png",
     apple: "/icons/apple-touch-icon.png",
     other: [
